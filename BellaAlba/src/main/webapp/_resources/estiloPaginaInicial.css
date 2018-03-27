@@ -1,0 +1,234 @@
+body {
+    background: url(../_imagens/background.jpg) center center no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body .static-header {
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background: #FFFFFF;
+    opacity: 0.9;
+}
+
+body .static-header .inside-header {
+    max-width: 900px;
+    padding: 15px 30px;
+    margin: 0 auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+body .static-header img {
+    margin: 0 auto;
+}
+
+
+
+@media (min-width: 770px) {
+    body .static-header .inside-header nav a {
+        display: inline-block;
+        color: #666666;
+        text-decoration: none;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    body .static-header .inside-header nav {
+        padding: 3px 0;
+        margin: 0 auto;
+        text-align: right;
+    }
+
+    body .static-header .inside-header nav a:not(:last-of-type) {
+        padding-right: 30px;
+    }
+
+    body .fixed-header .fheader__container nav {
+        padding: 3px 0;
+        float: right;
+        text-align: right;
+    }
+
+    body .fixed-header .fheader__container nav a {
+        display: inline-block;
+        color: #666666;
+        text-decoration: none;
+        font-size: 14px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 769px) {
+    body .static-header .inside-header nav a {
+        display: block;
+        color: #666666;
+        text-decoration: none;
+        font-size: 14px;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    body .static-header .inside-header nav {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    body .fixed-header .fheader__container nav {
+        text-align: center;
+    }
+
+    body .fixed-header .fheader__container nav a {
+        display: block;
+        color: #666666;
+        text-decoration: none;
+        font-size: 14px;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .alinha {
+      text-align: center;
+    }
+
+    .no-mobile {
+      display: none;
+    }
+}
+
+.logo {
+    font-family: 'Permanent Marker', cursive;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: gray;
+    color: red;
+}
+
+body .static-header .inside-header nav a:hover {
+    color: #333333;
+}
+
+body .fixed-header {
+    display: none;
+    position: fixed;
+    top: 0;
+    background: #FFFFFF;
+    width: 100%;
+    border-bottom: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.5);
+    opacity: 0.9;
+    z-index: 100;
+}
+
+body .fixed-header .fheader__container {
+    max-width: 900px;
+    padding: 15px 30px;
+    margin: 0 auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+body .fixed-header .fheader__container img {
+    float: left;
+    height: 30px;
+    width: auto;
+}
+
+body .fixed-header .fheader__container nav a:not(:last-of-type) {
+    padding-right: 15px;
+}
+
+body .fixed-header .fheader__container nav a:hover {
+    color: #333333;
+}
+
+body .container__content {
+    margin: 0 auto;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.8);
+    box-sizing: border-box;
+    min-height: 1000px;
+    overflow: hidden;
+    padding: 15px;
+    clear: both;
+}
+
+body .container__content > div {
+    min-height: 500px;
+    display: block;
+    overflow: hidden;
+}
+
+body .container__content > div h1 {
+    text-align: center;
+    line-height: 500px;
+    color: #666666;
+    margin: 0;
+}
+
+body .container__content > div.section1 {
+    background: #ffd6cd;
+}
+
+body .container__content > div.section2 {
+    background: #ddebfd;
+}
+
+body .container__content > div.section3 {
+    background: #ffd6cd;
+}
+
+body .container__content > div.section4 {
+    background: #ddebfd;
+}
+
+.fonte-acme {
+  font-family: 'Acme', sans-serif;
+}
+
+.fonte-lobster {
+  font-family: 'Lobster', cursive;
+}
+
+.backgrounded {
+    padding-top: 40px;
+    background-color: #FFFFFF;
+    opacity: 0.9;
+}
+
+.botoes-menu {
+    border: none;
+    background-color: transparent;
+    margin-bottom: 50px;
+}
+
+.paineis {
+  margin-bottom: 40px;
+}
+
+.cardapios {
+  list-style: none;
+}
+
+.titulopreco {
+  font-family: 'Lato', sans-serif;
+}
+
+.titulo {
+  color: red;
+  float: left;
+}
+
+.preco {
+  color: green;
+  float: right;
+}
+
+.descricao {
+  clear: both;
+}
