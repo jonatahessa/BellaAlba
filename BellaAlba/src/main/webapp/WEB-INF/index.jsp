@@ -13,15 +13,12 @@
         <link rel="shortcut icon" href="./_imagens/favicon1.ico" />
         <script type="text/javascript" src="./_resources/domPaginaInicial.js"></script>
         <script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script>
-        <link href="https://fonts.googleapis.com/css?family=Acme|Lobster|Permanent+Marker" rel="stylesheet">
-        <title>Nostra Pizza</title>
+        <title>Bella Alba</title>
     </head>
     <body>
         <header class="static-header">
             <div class="inside-header">
-              <h3 class="logo alinha">NOSTRA PIZZA</h3>
-              <h3 class="fonte-acme no-mobile"><a class="text-dark" href="tel:01156126177">5612-6177</a> / <a class="text-dark" href="tel:01156125083">5612-5083</a>/ <a class="text-dark" href="tel:011954588337">95458-8337</a></h3>
-                <nav>
+              <nav>
                     <a href="#section1"><strong>Home</strong></a>
                     <a href="#section2"><strong>Promoções</strong></a>
                     <a href="#section3"><strong>Cardápio</strong></a>
@@ -33,8 +30,6 @@
 
         <header class="fixed-header">
             <div class="fheader__container">
-              <h3 class="logo alinha">NOSTRA PIZZA</h3>
-              <h3 class="fonte-acme no-mobile"><a class="text-dark" href="tel:01156126177">5612-6177</a> / <a class="text-dark" href="tel:011954588337">95458-8337</a></h3>
                 <nav>
                     <a href="#section1"><strong>Home</strong></a>
                     <a href="#section2"><strong>Promoções</strong></a>
@@ -50,12 +45,12 @@
                     <h1 class="fonte-lobster">Home</h1>
                     <hr/>
                     <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                            <img class="img-fluid" src="./_imagens/pizzahome.jpg" alt="imagem de uma pizza">
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                            <img class="img-fluid col-12" src="./_imagens/logo.jpg" alt="imagem de uma pizza">
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                            <p>Tradicional na região, a NOSTRA PIZZA vem unindo a tradição da pizza com a sofisticação informal. E não para de crescer, evoluir, adotando sempre o lema: “Atender à expectativa dos clientes” como sinônimo de qualidade.</p>
-                            <p>Com investimento constante nas instalações, produtos e serviços, faz com que a NOSTRA PIZZA seja considerada um novo clássico na terra das pizzarias.</p>
+                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                            <p>Tradicional na região, a <strong>BELLA ALBA</strong> vem unindo a tradição da pizza com a sofisticação informal. E não para de crescer, evoluir, adotando sempre o lema: “Atender à expectativa dos clientes” como sinônimo de qualidade.</p>
+                            <p>Com investimento constante nas instalações, produtos e serviços, faz com que a <strong>BELLA ALBA</strong> seja considerada um novo clássico na terra das pizzarias.</p>
                             <p>Todos os recursos são colocados à disposição dos funcionários, para que a filosofia desde a fundação continue sempre a ser: SERVIR PIZZAS COM CARINHO, DEDICAÇÃO E ALEGRIA.</p>
                         </div>
                     </div>
@@ -97,15 +92,6 @@
                             </button>
                         </div>
                     </div>
-
-                    <div class="text-center">
-                      <h1 class="text-danger fonte-lobster">Fazemos Calzones com todos os sabores!</h1>
-                      <img class="img-fluid col-4" src="./_imagens/calzone.png" alt="Imagem de um calzone.">
-                    </div>
-
-                    <div class="text-center">
-                      <h1 class="text-success fonte-acme">TEMOS BORDA RECHEADA DE CATUPIRY E CHEDDAR!</h1>
-                    </div>
                 </div>
             </div>
 
@@ -113,9 +99,9 @@
                 <div id="section4" class="col-xs-12 col-sm-12 col-md-10 col-lg-8 backgrounded section4">
                     <h1 class="fonte-lobster">Localização</h1>
                     <hr/>
-                    <h3 class="text-center">Avenida Nossa Senhora do Sabará, 4226 - Vila Emir, São Paulo - SP</h3>
-                    <iframe class="col-12" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1826.820267886336!2d-46.67700446135582!3d-23.688809671346025!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4ff1b4682811%3A0xe92964896ead96a4!2sNostra+Pizza!5e0!3m2!1spt-BR!2sbr!4v1519313697103" height="500px;" allowfullscreen></iframe>
-                </div>
+                    <h3 class="text-center">Rua Alba, 1200, Vila Parque Jabaquara - São Paulo - SP</h3>
+                    <iframe class="col-12" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d456.8521490453049!2d-46.65946281480083!3d-23.646716980198146!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a90954e19f7%3A0x56d0f48ab5f73f0b!2sBella+Alba!5e0!3m2!1spt-BR!2sbr!4v1522248019482" height="500" allowfullscreen></iframe>
+                  </div>
             </div>
 
             <div class="row justify-content-center">
@@ -125,15 +111,13 @@
                     <div class="row justify-content-center">
                         <div class="col-12">
                             <h2 class="text-center display-4">
-                                <a class="text-dark" href="tel:01156126177"><strong>5612-6177</strong></a><br/>
-                                <a class="text-dark" href="tel:01156125083"><strong>5612-5083</strong></a><br/>
-                                <a class="text-dark" href="tel:011954588337"><strong>95458-8337</strong></a>
-                                <img class="col-1" src="./_imagens/whatsapp.png" alt="whatsapp">
+                                <a class="text-dark" href="tel:01156774005"><strong>5677-4005</strong></a><br/>
+                                <a class="text-dark" href="tel:01141119170"><strong>4111-9170</strong></a>
                             </h2>
                             <h3 class="text-center">Horário de funcionamento</h3>
-                            <h4 class="text-center">De Terça a Quinta e Domingo das 18:30h às 23:30h</h4>
-                            <h4 class="text-center">Sexta e Sábado das 18:30h às 00:30h</h4>
-                            <p class="text-center">Copyright (c) Pizzaria Nostra Pizza Copyright Holder All Rights Reserved.</p>
+                            <h4 class="text-center">De Segunda a Quinta e Domingo das 18h às 23:00h</h4>
+                            <h4 class="text-center">Sexta e Sábado das 18h às 00h</h4>
+                            <p class="text-center">Copyright (c) Pizzaria Bella Alba Copyright Holder All Rights Reserved.</p>
                             <p class="text-center">Developed by Jonata Hessa</p>
                         </div>
                     </div>
