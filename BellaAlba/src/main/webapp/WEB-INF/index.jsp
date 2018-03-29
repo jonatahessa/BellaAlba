@@ -15,6 +15,7 @@
         <script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script>
         <link href="https://fonts.googleapis.com/css?family=Kalam:700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cambay" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
         <title>Bella Alba</title>
     </head>
     <body>
@@ -42,6 +43,17 @@
             </div>
         </header>
         <div class="container-fluid">
+
+          <div class="row">
+            <div class="col-12 font-pacifico">
+              <h1 class="text-center text-success display-1 logo">Bella Alba</h1>
+              <h3 class="text-center font-kalam">Forneria</h3>
+              <h2 class="text-center text-light logo display-4">
+                  <a class="text-light logo" href="tel:01156774005"><strong>5677-4005</strong></a> / <a class="text-light logo" href="tel:01141119170"><strong>4111-9170</strong></a>
+              </h2>
+            </div>
+          </div>
+
             <div class="row justify-content-center">
                 <div id="section1" class="col-xs-12 col-sm-12 col-md-10 col-lg-8 backgrounded section1">
                     <h1 class="font-kalam sessoes">Home</h1>
@@ -68,7 +80,7 @@
                             <div class="paineis col-xs-12 col-sm-12 col-md-8 col-lg-6 border border-danger text-center promo-padding">
                                 <h2 class="text-danger">${promocao.nome}</h2>
                                 <h3 class="text-dark">${promocao.descricao}</h3>
-                                <h2 class="text-success">${promocao.preco}</h2>
+                                <h1 class="text-success">${promocao.preco}</h1>
                             </div>
                         </div>
                     </c:forEach>
