@@ -35,6 +35,7 @@ public class DaoProduto {
                 pizza.setNome(result.getString("Nome"));
                 pizza.setDescricao(result.getString("Descricao"));
                 pizza.setPreco(result.getString("Preco"));
+                pizza.setBroto(result.getString("Broto"));
                 pizza.setAtivo(result.getString("Ativo"));
                 pizza.setTipo(result.getString("Tipo"));
                 listaPizza.add(pizza);
@@ -76,6 +77,14 @@ public class DaoProduto {
         return executarConsulta(sql);
     }
     
+    public static List<Produto> listarPaginaInicialBebidas()
+            throws SQLException, Exception {
+        String sql = "SELECT * FROM tb_produto WHERE Ativo = 'SIM' AND "
+                + "Tipo = 'BEBIDA' ORDER BY ID;";
+
+        return executarConsulta(sql);
+    }
+    
     public static List<Produto> listarPaginaInicialCalzone()
             throws SQLException, Exception {
         String sql = "SELECT * FROM tb_produto WHERE Ativo = 'SIM' AND "
@@ -103,8 +112,8 @@ public class DaoProduto {
     public static void inserir(Produto pizza)
             throws SQLException, Exception {
 
-        String sql = "INSERT INTO tb_produto (Nome, Descricao, Preco, Ativo, Tipo) "
-                + "VALUES (?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO tb_produto (Nome, Descricao, Preco, Broto, Ativo, Tipo) "
+                + "VALUES (?, ?, ?, ?, ?, ?)";
         Connection connection = null;
         PreparedStatement statement = null;
         try {
@@ -114,8 +123,9 @@ public class DaoProduto {
             statement.setString(1, pizza.getNome());
             statement.setString(2, pizza.getDescricao());
             statement.setString(3, pizza.getPreco());
-            statement.setString(4, "SIM");
-            statement.setString(5, pizza.getTipo());
+            statement.setString(4, pizza.getBroto());
+            statement.setString(5, "SIM");
+            statement.setString(6, pizza.getTipo());
             System.out.println(statement.toString());
 
             System.out.println("Executando COMANDO SQL: " + sql);
@@ -182,6 +192,7 @@ public class DaoProduto {
                 + "SET Nome = ?, "
                 + "Descricao = ?, "
                 + "Preco = ?, "
+                + "Broto = ?, "
                 + "Tipo = ?, "
                 + "Ativo = ? "
                 + "WHERE ID = ?;";
@@ -195,9 +206,10 @@ public class DaoProduto {
             statement.setString(1, pizza.getNome());
             statement.setString(2, pizza.getDescricao());
             statement.setString(3, pizza.getPreco());
-            statement.setString(4, pizza.getTipo());
-            statement.setString(5, pizza.getAtivo());
-            statement.setInt(6, pizza.getCodigo());
+            statement.setString(4, pizza.getBroto());
+            statement.setString(5, pizza.getTipo());
+            statement.setString(6, pizza.getAtivo());
+            statement.setInt(7, pizza.getCodigo());
             System.out.println(statement.toString());
 
             System.out.println("Executando COMANDO SQL: " + sql);
@@ -232,6 +244,7 @@ public class DaoProduto {
             produto.setNome(result.getString("NOME"));
             produto.setDescricao(result.getString("DESCRICAO"));
             produto.setPreco(result.getString("PRECO"));
+            produto.setBroto(result.getString("BROTO"));
             produto.setAtivo(result.getString("ATIVO"));
             produto.setTipo(result.getString("TIPO"));
         }

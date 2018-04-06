@@ -43,6 +43,7 @@
                         <th scope="col">Nome</th>
                         <th scope="col">Descrição</th>
                         <th scope="col">Preço</th>
+                        <th scope="col">Broto</th>
                         <th scope="col">Tipo</th>
                         <th scope="col">Ativo</th>
                         <th scope="col">Editar</th>
@@ -56,6 +57,7 @@
                       <td>${produto.nome}</td>
                       <td>${produto.descricao}</td>
                       <td>${produto.preco}</td>
+                      <td>${produto.broto}</td>
                       <td>${produto.tipo}</td>
                       <td>${produto.ativo}</td>
                       <td><form action="AbrirEditar" method="get">

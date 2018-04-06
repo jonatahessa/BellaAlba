@@ -42,6 +42,7 @@ public class Salvar extends HttpServlet {
                 pizza.setNome(request.getParameter("nome"));
                 pizza.setDescricao(request.getParameter("descricao"));
                 pizza.setPreco(request.getParameter("preco"));
+                pizza.setBroto(request.getParameter("broto"));
                 pizza.setTipo(request.getParameter("tipo"));
                 pizza.setAtivo("SIM");
                 try {
@@ -56,6 +57,7 @@ public class Salvar extends HttpServlet {
                 pizza.setNome(request.getParameter("nome"));
                 pizza.setDescricao(request.getParameter("descricao"));
                 pizza.setPreco(request.getParameter("preco"));
+                pizza.setBroto(request.getParameter("broto"));
                 pizza.setTipo(request.getParameter("tipo"));
                 pizza.setAtivo(request.getParameter("ativo"));
 

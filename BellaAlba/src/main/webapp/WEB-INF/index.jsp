@@ -49,7 +49,8 @@
               <h1 class="text-center text-success display-1 logo">Bella Alba</h1>
               <h3 class="text-center font-kalam">Forneria</h3>
               <h2 class="text-center text-light logo display-4">
-                  <a class="text-light logo" href="tel:01156774005"><strong>5677-4005</strong></a> / <a class="text-light logo" href="tel:01141119170"><strong>4111-9170</strong></a>
+                  <a class="text-light logo" href="tel:01156774005"><strong>5677-4005</strong></a> / <a class="text-light logo" href="tel:01141119170"><strong>4111-9170</strong></a><br>
+                  <a class="text-light logo" href="tel:011987435391"><strong>98743-5391</strong></a><img class="img-fluid col-1" src="./_imagens/whatsapp.png" alt="whatsapp imagem">
               </h2>
             </div>
           </div>
@@ -106,6 +107,14 @@
                             </button>
                         </div>
                     </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-xs-12 col-sm-12 col-lg-8">
+                            <button type="button" class="col-12 botoes-menu" data-toggle="modal" data-target="#modal-bebidas">
+                                <img class="col-5" src="./_imagens/bebidas.png" alt="Foto das bebidas"><h3 class="font-kalam text-danger">Clique para abrir as Bebidas</h3>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -126,7 +135,8 @@
                         <div class="col-12">
                             <h2 class="text-center display-4">
                                 <a class="text-dark" href="tel:01156774005"><strong>5677-4005</strong></a><br/>
-                                <a class="text-dark" href="tel:01141119170"><strong>4111-9170</strong></a>
+                                <a class="text-dark" href="tel:01141119170"><strong>4111-9170</strong></a><br/>
+                                <a class="text-dark" href="tel:011987435391"><strong>98743-5391</strong></a><img class="img-fluid col-1" src="./_imagens/whatsapp.png" alt="whatsapp imagem">
                             </h2>
                             <h3 class="text-center">Horário de funcionamento</h3>
                             <h4 class="text-center">De Segunda a Quinta e Domingo das 18h às 23:00h</h4>
@@ -150,11 +160,14 @@
                     </div>
                     <div class="modal-body">
                         <ul class="col-12 cardapios">
+                          <p class="grande-broto">Broto</p>
+                          <p class="grande-broto">Grande</p>
                             <c:forEach var="pizza" items="${pizzas}">
                                 <li class="menu-category titulopreco">
                                     <div class="font-cambay">
-                                        <h5 class="titulo">${pizza.codigo} - ${pizza.nome}</h5>
-                                        <h5 class="preco">${pizza.preco}</h5>
+                                        <p class="titulo">${pizza.codigo} - ${pizza.nome}</p>
+                                        <p class="preco">${pizza.broto}</p>
+                                        <p class="preco">${pizza.preco}</p>
                                         <p class="descricao">${pizza.descricao}</p>
                                     </div>
                                 </li>
@@ -179,12 +192,44 @@
                     </div>
                     <div class="modal-body">
                         <ul class="col-12 cardapios">
+                          <p class="grande-broto">Broto</p>
+                          <p class="grande-broto">Grande</p>
                             <c:forEach var="doce" items="${doces}">
                                 <li class="menu-category titulopreco">
                                     <div class="font-cambay">
-                                        <h5 class="titulo">${doce.codigo} - ${doce.nome}</h5>
-                                        <h5 class="preco">${doce.preco}</h5>
+                                        <p class="titulo">${doce.codigo} - ${doce.nome}</p>
+                                        <p class="preco">${doce.broto}</p>
+                                        <p class="preco">${doce.preco}</p>
                                         <p class="descricao">${doce.descricao}</p>
+                                    </div>
+                                </li>
+                            </c:forEach>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar Cardapio</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-bebidas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Bebidas</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="col-12 cardapios">
+                            <c:forEach var="bebida" items="${bebidas}">
+                                <li class="menu-category titulopreco">
+                                    <div class="font-cambay">
+                                        <h5 class="titulo">${bebida.nome}</h5>
+                                        <h5 class="preco">${bebida.preco}</h5>
+                                        <p class="descricao">${bebida.descricao}</p>
                                     </div>
                                 </li>
                             </c:forEach>

@@ -11,6 +11,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="./_resources/estiloNovoEditar.css">
+      <script type="text/javascript" src="./_resources/domManutencao.js"></script>
       <title>Gerenciar</title>
     </head>
     <body>
@@ -26,9 +27,10 @@
 
                   <div class="form-group">
                       <label for="tipoProduto">Tipo</label>
-                      <select class="form-control" name="tipo">
+                      <select id="select-tipo" class="form-control" name="tipo">
                           <option value="PIZZA" ${produto.tipo == 'PIZZA' ? 'selected' : ''}>Pizza</option>
                           <option value="DOCE" ${produto.tipo == 'DOCE' ? 'selected' : ''}>Pizza Doce</option>
+                          <option value="BEBIDA" ${produto.tipo == 'BEBIDA' ? 'selected' : ''}>Bebida</option>
                           <option value="PROMOCAO" ${produto.tipo == 'PROMOCAO' ? 'selected' : ''}>Promoção</option>
                       </select>
                   </div>
@@ -43,9 +45,14 @@
                       <textarea class="form-control" name="descricao" rows="3">${produto.descricao}</textarea>
                   </div>
 
-                  <div id="broto" class="form-group">
+                  <div id="preco" class="form-group">
                       <label for="valorProduto">Preço</label>
                       <input class="form-control" type="text" value="${produto.preco}" name="preco"/>
+                  </div>
+
+                  <div id="broto" class="form-group">
+                      <label for="valorProduto">Broto</label>
+                      <input class="form-control" type="text" value="${produto.broto}" name="broto"/>
                   </div>
 
                   <div class="form-inline">
