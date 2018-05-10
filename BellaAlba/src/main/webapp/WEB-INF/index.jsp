@@ -45,12 +45,12 @@
         <div class="container-fluid">
 
           <div class="row">
-            <div class="col-12 font-pacifico">
-              <h1 class="text-center text-success display-1 logo">Bella Alba</h1>
-              <h3 class="text-center font-kalam">Forneria</h3>
+            <div class="col-12">
+              <h1 class="text-center text-success display-1 logo font-pacifico">Bella Alba</h1>
+              <h3 class="text-center font-kalam">Pizzaria</h3>
               <h2 class="text-center text-light logo display-4">
-                  <a class="text-light logo" href="tel:01156774005"><strong>5677-4005</strong></a> / <a class="text-light logo" href="tel:01141119170"><strong>4111-9170</strong></a><br>
-                  <a class="text-light logo" href="tel:011987435391"><strong>98743-5391</strong></a><img class="img-fluid col-1" src="./_imagens/whatsapp.png" alt="whatsapp imagem">
+                  <a class="text-light logo font-pacifico" href="tel:01156774005"><strong>5677-4005</strong></a> / <a class="text-light logo font-pacifico" href="tel:01141119170"><strong>4111-9170</strong></a><br>
+                  <a class="text-light logo font-pacifico" href="tel:011987435391"><strong>98743-5391</strong></a><img class="img-fluid col-1" src="./_imagens/whatsapp.png" alt="whatsapp imagem">
               </h2>
             </div>
           </div>
