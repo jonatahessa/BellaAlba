@@ -249,10 +249,13 @@ font-family: 'Kalam', cursive;
     opacity: 0.9;
 }
 
+.botoes-container {
+  margin-bottom: 50px;
+}
+
 .botoes-menu {
     border: none;
     background-color: transparent;
-    margin-bottom: 50px;
 }
 
 .paineis {

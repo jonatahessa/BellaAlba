@@ -30,6 +30,7 @@
                       <select id="select-tipo" class="form-control" name="tipo">
                           <option value="PIZZA" ${produto.tipo == 'PIZZA' ? 'selected' : ''}>Pizza</option>
                           <option value="DOCE" ${produto.tipo == 'DOCE' ? 'selected' : ''}>Pizza Doce</option>
+                          <option value="ESFIHA" ${produto.tipo == 'ESFIHA' ? 'selected' : ''}>Esfiha</option>
                           <option value="BEBIDA" ${produto.tipo == 'BEBIDA' ? 'selected' : ''}>Bebida</option>
                           <option value="PROMOCAO" ${produto.tipo == 'PROMOCAO' ? 'selected' : ''}>Promoção</option>
                       </select>

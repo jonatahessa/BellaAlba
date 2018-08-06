@@ -4,7 +4,9 @@ function main() {
 }
 
 function hideShowBroto() {
-  if (document.querySelector("#select-tipo").value == 'PROMOCAO' || document.querySelector("#select-tipo").value == 'BEBIDA') {
+  if (document.querySelector("#select-tipo").value == 'PROMOCAO'
+      || document.querySelector("#select-tipo").value == 'BEBIDA'
+      || document.querySelector("#select-tipo").value == 'ESFIHA') {
     document.querySelector("#broto").style.display = 'none';
   } else {
     document.querySelector("#broto").style.display = 'block';

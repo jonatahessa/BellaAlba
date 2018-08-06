@@ -85,18 +85,10 @@ public class DaoProduto {
         return executarConsulta(sql);
     }
     
-    public static List<Produto> listarPaginaInicialCalzone()
+    public static List<Produto> listarPaginaInicialEsfihas()
             throws SQLException, Exception {
         String sql = "SELECT * FROM tb_produto WHERE Ativo = 'SIM' AND "
-                + "Tipo = 'CALZONE' ORDER BY ID;";
-
-        return executarConsulta(sql);
-    }
-    
-    public static List<Produto> listarPaginaInicialNovidades()
-            throws SQLException, Exception {
-        String sql = "SELECT * FROM tb_produto WHERE Ativo = 'SIM' AND "
-                + "Tipo = 'NOVIDADE' ORDER BY ID;";
+                + "Tipo = 'ESFIHA' ORDER BY ID;";
 
         return executarConsulta(sql);
     }

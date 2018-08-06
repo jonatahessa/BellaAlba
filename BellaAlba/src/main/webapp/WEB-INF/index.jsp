@@ -93,7 +93,7 @@
                     <h1 class="font-kalam sessoes">Cardápio</h1>
                     <hr/>
                     <div class="row justify-content-center">
-                        <div class="col-xs-12 col-sm-12 col-lg-8">
+                        <div class="col-xs-12 col-sm-12 col-lg-8 botoes-container">
                             <button type="button" class="col-12 botoes-menu" data-toggle="modal" data-target="#modal-pizzas">
                                 <img class="col-5" src="./_imagens/pizzasalgada.png" alt="Foto de uma pizza salgada"><h3 class="font-kalam text-danger">Clique para abrir as Pizzas Salgadas</h3>
                             </button>
@@ -101,7 +101,7 @@
                     </div>
 
                     <div class="row justify-content-center">
-                        <div class="col-xs-12 col-sm-12 col-lg-8">
+                        <div class="col-xs-12 col-sm-12 col-lg-8 botoes-container">
                             <button type="button" class="col-12 botoes-menu" data-toggle="modal" data-target="#modal-doces">
                                 <img class="col-5" src="./_imagens/pizzadoce.png" alt="Foto de uma pizza doce"><h3 class="font-kalam text-danger">Clique para abrir as Pizzas Doces</h3>
                             </button>
@@ -109,7 +109,16 @@
                     </div>
 
                     <div class="row justify-content-center">
-                        <div class="col-xs-12 col-sm-12 col-lg-8">
+                        <div class="col-xs-12 col-sm-12 col-lg-8 botoes-container">
+                            <button type="button" class="col-12 botoes-menu" data-toggle="modal" data-target="#modal-esfihas">
+                                <img class="col-5" src="./_imagens/esfihas.png" alt="Foto de esfihas"><h3 class="font-kalam text-danger">Clique para abrir as Esfihas</h3>
+                            </button>
+                            <p class="text-center">20 centímetros de diâmetro</p>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-xs-12 col-sm-12 col-lg-8 botoes-container">
                             <button type="button" class="col-12 botoes-menu" data-toggle="modal" data-target="#modal-bebidas">
                                 <img class="col-5" src="./_imagens/bebidas.png" alt="Foto das bebidas"><h3 class="font-kalam text-danger">Clique para abrir as Bebidas</h3>
                             </button>
@@ -201,6 +210,35 @@
                                         <p class="preco">${doce.broto}</p>
                                         <p class="preco">${doce.preco}</p>
                                         <p class="descricao">${doce.descricao}</p>
+                                    </div>
+                                </li>
+                            </c:forEach>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar Cardapio</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-esfihas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Esfihas</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="col-12 cardapios">
+                            <c:forEach var="esfiha" items="${esfihas}">
+                                <li class="menu-category titulopreco">
+                                    <div class="font-cambay">
+                                        <p class="titulo">${esfiha.nome}</p>
+                                        <p class="preco">${esfiha.preco}</p>
+                                        <p class="descricao">${esfiha.descricao}</p>
                                     </div>
                                 </li>
                             </c:forEach>
